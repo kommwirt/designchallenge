@@ -141,11 +141,11 @@ nav {
   animation: rocket 10s ease 1s infinite;
 }
 @keyframes rocket {
-  15% {
-    transform: translateY(-400px) translateX(400px) rotateZ(30deg);
+  50% {
+    transform: translateY(-30vh) translateX(30vw) rotateZ(-50deg);
   }
   100% {
-    transform: translateY(-1600px) translateX(5000px);
+    transform: translateY(-100vh) translateX(30vw);
   }
 }
 #scroll {
