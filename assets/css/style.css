@@ -1,0 +1,293 @@
+/* Font-Import Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
+
+/* Resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* General */
+
+/* Simple Smooth Control */
+
+html {
+  scroll-behavior: smooth;
+}
+/* Body, Section, Centered */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #0b0c17;
+}
+section {
+  padding: 5% 0;
+}
+.centered {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Fonts */
+p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.bigger {
+  font-size: 1.5rem;
+}
+.number {
+  color: #dddddd;
+  font-weight: 700;
+  margin-bottom: 30%;
+}
+h1 {
+  font-size: 4.8rem;
+}
+h1,
+h2 {
+  padding-bottom: 4%;
+}
+.number,
+h2 {
+  font-size: 3.8rem;
+}
+/* Header, Nav, Headersection */
+
+/* Header general */
+
+header {
+  background: url("/assets/img/ilustracion_people.png") no-repeat,
+    url("/assets/img/ilustracion1.png") no-repeat;
+  background-size: 55%;
+  animation: zerogravity 1s ease-in-out infinite;
+  animation-direction: alternate;
+  height: 100vh;
+}
+
+@keyframes zerogravity {
+  from {
+    background-position: 100% -30%, 100% 0;
+  }
+  to {
+    background-position: 100% 30%, 100% 0;
+  }
+}
+
+/* Nav, Home, Claim */
+
+nav {
+  padding: 2.5%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+#home {
+  width: 2.3rem;
+  height: 2.3rem;
+  position: fixed;
+}
+
+#claim {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+
+#claim-top {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#claim-bottom {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+#intro {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 15% 0 0 8%;
+}
+#rocket::after {
+  content: url("/assets/icons/rocket.png");
+}
+#scroll {
+  margin-top: 15%;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ff3571;
+}
+#scroll::after {
+  content: "\2014";
+  padding-left: 2px;
+}
+/* Image devider */
+
+#images {
+  background: url("/assets/img/images.jpg") no-repeat fixed center/contain;
+  height: 100vh;
+}
+
+/* Main */
+footer,
+main {
+  padding: 0 12%;
+}
+
+#first {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: baseline;
+}
+/* First section "Every Idea" */
+
+#first h2 {
+  width: 40%;
+}
+#first p {
+  width: 54%;
+}
+#idea::after {
+  content: url("/assets/icons/idea.png");
+}
+
+/* Second section "Learned a lot" */
+
+#second h2 {
+  width: 70%;
+}
+
+#hints {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 70vh;
+  margin-top: 10%;
+}
+.hints-items {
+  width: 40%;
+  padding: 5%;
+}
+.hints-items h3::before {
+  width: 6%;
+  display: inline-block;
+  padding-right: 6%;
+}
+.hints-items:nth-of-type(1) h3::before {
+  content: url("/assets/icons/title02.svg");
+}
+.hints-items:nth-of-type(2) h3::before {
+  content: url("/assets/icons/title04.svg");
+}
+.hints-items:nth-of-type(3) h3::before {
+  content: url("/assets/icons/title01.svg");
+}
+.hints-items:nth-of-type(4) h3::before {
+  content: url("/assets/icons/title03.svg");
+}
+.hints-items p {
+  padding-left: 12%;
+  padding-top: 4%;
+}
+
+/* Third section "Are you ready?" */
+
+article {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 15%;
+}
+.article-text {
+  width: 40%;
+}
+article:nth-of-type(odd) {
+  align-items: flex-end;
+  background-position: left;
+}
+article:nth-of-type(even) {
+  background-position: right;
+}
+article:first-of-type {
+  background-image: url("/assets/img/step01.png");
+}
+article:nth-of-type(2) {
+  background-image: url("/assets/img/step02.png");
+}
+article:nth-of-type(3) {
+  background-image: url("/assets/img/step03.png");
+}
+article:nth-of-type(4) {
+  background-image: url("/assets/img/step04.png");
+}
+
+/* Footer */
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 180px;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+input,
+.button {
+  font-size: 1.5rem;
+}
+input {
+  padding: 2% 2%;
+  width: 40%;
+  text-align: center;
+  box-shadow: #dddddd 0px 4px 10px;
+}
+.button {
+  background-color: #ec3372;
+  color: #fff;
+  padding: 2% 10%;
+}
+.button:hover {
+  background-image: linear-gradient(to right, #ec3372, #3c30ff, yellow);
+}
+#heart::after {
+  background-image: url("/assets/icons/love.png");
+  background-size: 10px 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  content: "";
+  animation: beat 1s ease 1s infinite;
+}
+@keyframes beat {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
