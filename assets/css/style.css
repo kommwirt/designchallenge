@@ -126,8 +126,27 @@ nav {
   height: 100%;
   padding: 15% 0 0 8%;
 }
-#rocket::after {
+/* #rocket::after {
   content: url("../icons/rocket.png");
+} */
+#rocket::after {
+  background-image: url("../icons/rocket.png");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  background-size: cover;
+  content: "";
+  animation: rocket 10s ease 1s infinite;
+}
+@keyframes rocket {
+  15% {
+    transform: translateY(-400px) translateX(400px) rotateZ(30deg);
+  }
+  100% {
+    transform: translateY(-1600px) translateX(5000px);
+  }
 }
 #scroll {
   margin-top: 15%;
@@ -168,9 +187,25 @@ main {
   width: 54%;
 }
 #idea::after {
-  content: url("../icons/idea.png");
+  background-image: url("../icons/idea.png");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  background-size: cover;
+  content: "";
+  animation: bulb 5s ease 1s infinite;
 }
 
+@keyframes bulb {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* Second section "Learned a lot" */
 
 #second h2 {
