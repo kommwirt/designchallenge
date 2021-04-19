@@ -80,10 +80,10 @@ header {
 
 @keyframes zerogravity {
   from {
-    background-position: 100% -30%, 100% 0;
+    background-position: 100% -20%, 100% 0;
   }
   to {
-    background-position: 100% 30%, 100% 0;
+    background-position: 100% 20%, 100% 0;
   }
 }
 
@@ -129,6 +129,7 @@ nav {
 /* #rocket::after {
   content: url("../icons/rocket.png");
 } */
+/* Fly little rocket, fly */
 #rocket::after {
   background-image: url("../icons/rocket.png");
   background-size: 40px 40px;
@@ -138,14 +139,14 @@ nav {
   height: 52px;
   background-size: cover;
   content: "";
-  animation: rocket 10s ease 1s infinite;
+  animation: rocket 10s ease 3s infinite;
 }
 @keyframes rocket {
   50% {
-    transform: translateY(-30vh) translateX(30vw) rotateZ(-50deg);
+    transform: translateY(-40vh) translateX(35vw) rotateZ(-48deg);
   }
   100% {
-    transform: translateY(-100vh) translateX(30vw);
+    transform: translateY(-100vh) translateX(36vw);
   }
 }
 #scroll {
